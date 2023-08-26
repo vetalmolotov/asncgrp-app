@@ -1,2 +1,11 @@
 
 $bg-body: #0E0E0E;
+
+// main colors
+$main-black: #000;
+$main-green: #22B14C;
+
+// text colors
+$text-main: #fff;
+$text-primary: $main-green;
+$text-green: rgba($text-main, 0.7)

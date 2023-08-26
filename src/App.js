@@ -5,7 +5,7 @@ import AppHeader from "./components/sections/header";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <AppHeader />
       {/*<header className="App-header">*/}
       {/*  <img src={logo} className="App-logo" alt="logo" />*/}

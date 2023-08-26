@@ -1,8 +1,17 @@
 @import-normalize;
 @import "assets/styles/index.scss";
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
 .app {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1600px;
 }
 
 .app-logo {

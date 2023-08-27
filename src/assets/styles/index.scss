@@ -1,6 +1,9 @@
 @import "variables";
 @import "mixins";
 
+html,body {
+  height: 100%;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;

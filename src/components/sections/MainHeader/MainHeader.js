@@ -1,7 +1,7 @@
 import React from "react";
 import MainLogo from "../../AppLogo/Logo";
 import MainMenu from "../../MainMenu/Navigation";
-
+import HeaderUserBar from "../../HeaderUserBar/HeaderUserBar";
 import header from './header.module.scss'
 
 const AppHeader = () => {
@@ -10,7 +10,7 @@ const AppHeader = () => {
         <header className={header.appHeader}>
             <MainLogo />
             <MainMenu />
-            <div></div>
+            <HeaderUserBar />
         </header>
     </>
 }

@@ -1,0 +1,21 @@
+@import "../../../assets/styles/variables";
+@import "../../../assets/styles/mixins";
+
+.userProfile {
+  @include flex-v;
+  padding: 0 8px;
+  column-gap: 10px;
+  height: 44px;
+  border-radius: 3px;
+  background: #151515;
+  h4 {
+    font-size: 12px;
+    font-weight: 400;
+    color: $text-main;
+  }
+  p {
+    height: 24px;
+    width: 1px;
+    background: #292929;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../assets/styles/mixins";
+.userActions {
+  @include flex-v;
+  column-gap: 7px;
+  height: 100%;
+}
+.userActionButton {
+  @include flex-vh;
+  width: 44px;
+  height: 44px;
+  border-radius: 3px;
+  background: #151515;
+}

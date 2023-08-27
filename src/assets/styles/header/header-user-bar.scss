@@ -1,0 +1,28 @@
+@import "../mixins";
+.user-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
+  height: 44px;
+  .btn {
+    height: 100%;
+  }
+  &-lang {
+    width: 44px;
+    height: 44px;
+  }
+  &-divider {
+    width: 1px;
+    height: 59px;
+    margin: 0 5px;
+    background: #151515;
+    box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.05);
+  }
+  &-logout {
+    @include flex-vh;
+    width: 44px;
+    height: 44px;
+  }
+
+}

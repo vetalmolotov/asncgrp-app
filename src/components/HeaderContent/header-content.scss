@@ -1,0 +1,17 @@
+@import "src/assets/styles/mixins";
+.header-content {
+  @include flex-v;
+  width: 100%;
+  height: 33px;
+  color: #0E0E0E;
+  font-size: 12px;
+  font-weight: 500;
+  background: linear-gradient(180deg, #F1F1F1 0%, #9E9E9E 100%);
+  &-divider {
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.21);
+    box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.06);
+    margin: 0 8px;
+  }
+}

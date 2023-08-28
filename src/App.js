@@ -1,16 +1,16 @@
 import React from "react";
 import logo from './logo.svg';
-import './App.scss';
 import AppHeader from "./components/sections/MainHeader/MainHeader";
+import TicketAside from "./components/sections/TicketAside/TicketsAside";
+import AppContent from "./components/sections/AppContent/AppContent";
+import './App.scss';
 
 function App() {
   return (
     <div className="app">
       <AppHeader />
-      <main>
-
-      </main>
-      <aside>dsdsd</aside>
+      <AppContent />
+      <TicketAside />
       {/*<header className="App-header">*/}
       {/*  <img src={logo} className="App-logo" alt="logo" />*/}
       {/*  <p>*/}

@@ -1,0 +1,14 @@
+@import "src/assets/styles/mixins";
+.header-content-btn {
+  @include flex-vh;
+  height: 100%;
+  cursor: pointer;
+  padding: 0 4px;
+  border: 2px solid transparent;
+  background: transparent;
+  &.active {
+    border-bottom-color: #22B14C;
+    background: linear-gradient(180deg, rgba(141, 141, 141, 0.30) 0%, rgba(168, 168, 168, 0.30) 100%);
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15) inset;
+  }
+}

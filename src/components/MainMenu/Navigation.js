@@ -4,14 +4,49 @@ import '../../assets/styles/header/menu.scss'
 
 
 const MainMenu = () => {
+    const menuItem = [
+        {
+            id: '0',
+            menuText: 'HOMEPAGE',
+            url: '/',
+            isActive: true
+        },
+        {
+            id: '1',
+            menuText: 'LIVE BETS',
+            url: '/',
+            isActive: false
+        },
+        {
+            id: '2',
+            menuText: 'SPORTS',
+            url: '/',
+            isActive: false
+        },
+        {
+            id: '3',
+            menuText: 'HIGHLIGHTS',
+            url: '/',
+            isActive: false
+        },
+        {
+            id: '4',
+            menuText: 'TOP MATCHES',
+            url: '/',
+            isActive: false
+        },
 
+    ];
     return <>
         <nav className={menuStyles.nav}>
-            <a className="nav-link nav-link__active" href="/">HOMEPAGE</a>
-            <a className="nav-link" href="/">LIVE BETS</a>
-            <a className="nav-link" href="/">SPORTS</a>
-            <a className="nav-link" href="/">HIGHLIGHTS</a>
-            <a className="nav-link" href="/">TOP MATCHES</a>
+            {menuItem.map((option) => (
+                <a
+                    key={option.id}
+                    className={`nav-link ${option.isActive ? 'nav-link__active' : ''}`}
+                    href={option.url}>
+                        {option.menuText}
+                </a>
+            ))}
         </nav>
     </>
 }

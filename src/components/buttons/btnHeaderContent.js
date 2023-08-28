@@ -1,9 +1,10 @@
 import React from "react";
 import './btn-header-content.scss'
 
-const ButtonHeaderContent = ({children}) => {
+const ButtonHeaderContent = ({children, activeClass}) => {
 
-    return <div className="header-content-btn">
+    return <div className={`header-content-btn ${activeClass}`}>
+        {/*{`header-content-btn ${isActive ? 'active' : ''}`}*/}
         {children}
     </div>
 }

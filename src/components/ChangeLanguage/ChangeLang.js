@@ -1,9 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import {LangEng, LangGerman, LangTurkish, LangUkraine} from '../../assets/imgComponents/langFlags'
 import lang from './change-lang.module.scss'
 import '../../assets/styles/header/change-lang.scss'
 
 const ChangeLang = () => {
+
+    const [toggle, setToggle] = useState(false);
+    const handleToggleChange = () => {
+        setToggle(!toggle);
+    };
 
     const langFlagItem = [
         {
@@ -21,17 +26,22 @@ const ChangeLang = () => {
     ]
 
     return <>
-        <div className={`user-bar-lang ${lang.langWrapper} active`}>
+        <div
+            className={`user-bar-lang ${lang.langWrapper} ${toggle ? 'active' : ''}`}
+            onClick={handleToggleChange}
+        >
             <div className={lang.langCurrent}>
                 <LangEng/>
             </div>
-            <ul className={lang.langList}>
-                {langFlagItem.map((option) => (
-                    <li key={option.id}>
-                        {option.icon}
-                    </li>
-                ))}
-            </ul>
+            {toggle &&
+                <ul className={lang.langList}>
+                    {langFlagItem.map((option) => (
+                        <li key={option.id}>
+                            {option.icon}
+                        </li>
+                    ))}
+                </ul>
+            }
         </div>
     </>
 }

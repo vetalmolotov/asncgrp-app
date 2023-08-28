@@ -11,6 +11,7 @@
   border: 1px solid #151515;
   background: #151515;
   border-radius: 3px;
+  cursor: pointer;
 }
 .langList {
   position: absolute;
@@ -28,6 +29,7 @@
   background: #2F2F2F;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.55);
   list-style: none;
+  z-index: 4;
   li {
     cursor: pointer;
     width: 28px;

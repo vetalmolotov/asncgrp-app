@@ -34,13 +34,12 @@ const ContentSidebar = () => {
                 {sidebarHeaderItem.map((option) => (
                     <ButtonHeaderContent
                         key={option.id}
-                        className={`${option.isActive === true ? 'active' : ''}`}
+                        className={`${option.isActive ? 'active' : ''}`}
+                        data-foo={`${option.isActive ? 'active' : ''}`}
                     >
                         {option.text}
                     </ButtonHeaderContent>
                 ))}
-                {/*<ButtonHeaderContent>tedt</ButtonHeaderContent>*/}
-                {/*<ButtonHeaderContent>test</ButtonHeaderContent>*/}
             </HeaderContent>
             <p>section</p>
         </section>

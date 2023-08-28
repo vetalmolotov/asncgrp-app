@@ -4,17 +4,33 @@ import styles from './user-actions.module.scss'
 
 const UserActions = () => {
 
+    const userActionItem = [
+        {
+            id: '0',
+            url: '/',
+            icon: <UserActionSearch/>
+        },
+        {
+            id: '1',
+            url: '/',
+            icon: <UserActionTransaction/>
+        },
+        {
+            id: '2',
+            url: '/',
+            icon: <UserActionHistory/>
+        }
+    ]
+
     return <>
         <div className={`user-bar-actions ${styles.userActions}`}>
-            <a href="/" className={`${styles.userActionButton}`}>
-                <UserActionSearch/>
-            </a>
-            <a href="/" className={`${styles.userActionButton}`}>
-                <UserActionTransaction/>
-            </a>
-            <a href="/" className={`${styles.userActionButton}`}>
-                <UserActionHistory/>
-            </a>
+            {userActionItem.map((option) => (
+                <a key={option.id}
+                   href={option.url}
+                   className={`${styles.userActionButton}`}>
+                    {option.icon}
+                </a>
+            ))}
         </div>
     </>
 }

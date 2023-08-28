@@ -5,9 +5,9 @@ import '../../assets/styles/header/change-lang.scss'
 
 const ChangeLang = () => {
 
-    const [toggle, setToggle] = useState(false);
+    const [setActive, setToggle] = useState(false);
     const handleToggleChange = () => {
-        setToggle(!toggle);
+        setToggle(!setActive);
     };
 
     const langFlagItem = [
@@ -27,13 +27,13 @@ const ChangeLang = () => {
 
     return <>
         <div
-            className={`user-bar-lang ${lang.langWrapper} ${toggle ? 'active' : ''}`}
+            className={`user-bar-lang ${lang.langWrapper} ${setActive ? 'active' : ''}`}
             onClick={handleToggleChange}
         >
             <div className={lang.langCurrent}>
                 <LangEng/>
             </div>
-            {toggle &&
+            {setActive &&
                 <ul className={lang.langList}>
                     {langFlagItem.map((option) => (
                         <li key={option.id}>

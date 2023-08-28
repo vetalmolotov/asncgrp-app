@@ -43,7 +43,8 @@ const MainMenu = () => {
                 <a
                     key={option.id}
                     className={`nav-link ${option.isActive ? 'nav-link__active' : ''}`}
-                    href={option.url}>
+                    href={option.url}
+                >
                         {option.menuText}
                 </a>
             ))}

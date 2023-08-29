@@ -2,6 +2,7 @@ import React from "react";
 import ContentSidebar from "../ContentSidebar/ContentSidebar";
 import ContentMain from "../ContentMain/ContentMain";
 import './app-content.scss'
+import ContentFooter from "../ContentFooter/ContentFooter";
 
 const AppContent = () => {
 
@@ -9,7 +10,7 @@ const AppContent = () => {
         <section className="app-content">
             <ContentSidebar />
             <ContentMain />
-            <footer className="app-content-footer">footer</footer>
+            <ContentFooter />
         </section>
     </>
 }

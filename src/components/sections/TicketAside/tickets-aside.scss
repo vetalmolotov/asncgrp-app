@@ -1,0 +1,51 @@
+@import "src/assets/styles/mixins";
+
+.tickets-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  height: 100%;
+  margin: 4px 0 0 7px;
+  color: #fff;
+  .ticket-aside {
+    background: linear-gradient(180deg, #54B052 0%, #287226 100%),
+    linear-gradient(0deg, #22B14C, #22B14C);
+    border: 1px solid rgba(34, 177, 76, 1);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    h4 {
+      margin: 0 5px 0 14px;
+    }
+    p {
+      @include flex-vh;
+      width: 20px;
+      height: 16px;
+      font-weight: 500;
+      margin-right: auto;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 2px;
+    }
+    svg {
+      width: 13px;
+      height: 15px;
+      margin: 0 8px 0 0;
+      cursor: pointer;
+    }
+  }
+  & > section {
+    width: 100%;
+    flex: 1;
+    margin: 3px 0 0 0;
+    background: #151515;
+  }
+  footer {
+    width: 100%;
+    min-height: 277px;
+    margin-top: auto;
+    border-radius: 4px 4px 0px 0px;
+    background: #1B1B1B;
+  }
+}

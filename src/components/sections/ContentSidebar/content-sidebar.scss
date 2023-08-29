@@ -1,1 +1,25 @@
-.content-sidebar {}
+@import "src/assets/styles/mixins";
+.content-sidebar {
+  &-content {
+    padding: 8px 0;
+  }
+  &-title {
+    @include flex-v;
+    height: 29px;
+    padding: 0 10px;
+    margin: 0 0 8px 0;
+    svg {
+      width: 15px;
+      height: 15px;
+      path {
+        stroke: #22B14C;
+      }
+    }
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      color: #F9F9F9;
+      margin: 0 0 0 8px;
+    }
+  }
+}

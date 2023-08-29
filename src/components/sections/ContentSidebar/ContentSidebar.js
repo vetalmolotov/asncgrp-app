@@ -1,7 +1,9 @@
 import React from "react";
 import HeaderContent from "../../HeaderContent/HeaderContent";
-import './content-sidebar.scss'
 import ButtonHeaderContent from "../../buttons/btnHeaderContent";
+import {IconTitleCountries} from "../../../assets/imgComponents/iconsCommon";
+import CountryItem from "../../CountryListItem/CountryItem";
+import './content-sidebar.scss'
 
 const ContentSidebar = () => {
 
@@ -28,6 +30,12 @@ const ContentSidebar = () => {
         }
     ]
 
+    const countryList = [
+        {
+            flag: true,
+        }
+    ]
+
     return <>
         <section className="app-content-sidebar content-sidebar">
             <HeaderContent>
@@ -41,7 +49,18 @@ const ContentSidebar = () => {
                     </ButtonHeaderContent>
                 ))}
             </HeaderContent>
-            <p>section</p>
+            <div className="content-sidebar-content">
+                {/*
+                    if there was more similar titles with icon on the left,
+                    like this one below,
+                    i'll create a separate component
+                */}
+                <h3 className="content-sidebar-title">
+                    <IconTitleCountries /><span>Countries</span>
+                </h3>
+                <CountryItem />
+                <CountryItem />
+            </div>
         </section>
     </>
 }

@@ -3,6 +3,13 @@ import HeaderContent from "../../HeaderContent/HeaderContent";
 import ButtonHeaderContent from "../../buttons/btnHeaderContent";
 import {IconTitleCountries} from "../../../assets/imgComponents/iconsCommon";
 import CountryItem from "../../CountryListItem/CountryItem";
+import {
+    FlagAlgeria,
+    FlagArgentina,
+    FlagAustralia,
+    FlagAustria,
+    FlagChile, FlagChina
+} from "../../../assets/imgComponents/saidebarFlags";
 import './content-sidebar.scss'
 
 const ContentSidebar = () => {
@@ -32,7 +39,88 @@ const ContentSidebar = () => {
 
     const countryList = [
         {
-            flag: true,
+            flag: <FlagAlgeria/>,
+            title: 'Algeria',
+            content:
+                {
+                    text: 'Ligue 1',
+                    data: '2'
+                },
+                // {
+                //     text: 'Ligue 2',
+                //     data: '14'
+                // }
+
+        },
+        {
+            flag: <FlagArgentina/>,
+            title: 'Argentina',
+            content:
+                {
+                    text: 'Ligue 1',
+                    data: '6'
+                },
+                // {
+                //     text: 'Ligue 2',
+                //     data: '10'
+                // }
+
+        },
+        {
+            flag: <FlagAustralia/>,
+            title: 'Australia',
+            content:
+                {
+                    text: 'Ligue 1',
+                    data: '1'
+                },
+                // {
+                //     text: 'Ligue 2',
+                //     data: '4'
+                // }
+
+        },
+        {
+            flag: <FlagAustria/>,
+            title: 'Austria',
+            content:
+                {
+                    text: 'Ligue 1',
+                    data: '12'
+                },
+            // {
+            //     text: 'Ligue 2',
+            //     data: '4'
+            // }
+
+        },
+        {
+            flag: <FlagChile/>,
+            title: 'Chile',
+            content:
+                {
+                    text: 'Ligue 1',
+                    data: '10'
+                },
+            // {
+            //     text: 'Ligue 2',
+            //     data: '4'
+            // }
+
+        },
+        {
+            flag: <FlagChina/>,
+            title: 'China',
+            content:
+                {
+                    text: 'Ligue 1',
+                    data: '8'
+                },
+            // {
+            //     text: 'Ligue 2',
+            //     data: '4'
+            // }
+
         }
     ]
 
@@ -58,8 +146,15 @@ const ContentSidebar = () => {
                 <h3 className="content-sidebar-title">
                     <IconTitleCountries /><span>Countries</span>
                 </h3>
-                <CountryItem />
-                <CountryItem />
+                {countryList.map((option) => (
+                    <CountryItem
+                        flag={option.flag}
+                        title={option.title}
+                        detailsText={option.content.text}
+                        detailsData={option.content.data}
+                    />
+                ))}
+                {/*<CountryItem />*/}
             </div>
         </section>
     </>

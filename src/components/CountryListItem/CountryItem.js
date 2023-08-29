@@ -3,7 +3,7 @@ import './country-item.scss'
 import {FlagAlgeria} from "../../assets/imgComponents/saidebarFlags";
 import {IconDropdownMenu} from "../../assets/imgComponents/iconArrows";
 
-const CountryItem = () => {
+const CountryItem = ({flag, title, detailsText, detailsData}) => {
 
     const [setOpen, setToggle] = useState(false);
     const handleToggleChange = () => {
@@ -16,15 +16,19 @@ const CountryItem = () => {
                 className="country-details-title"
                 onClick={handleToggleChange}
             >
-                <FlagAlgeria />
-                <p>gdgd</p>
+                {flag}
+                <p>{title}</p>
                 <IconDropdownMenu className={'arrow'} />
             </h4>
             {setOpen &&
                 <ul className="country-details-list">
+                    {/*
+                    we must use map() function here
+                    but for now i can't figure out how to implement it
+                    */}
                     <li>
-                        <span>Ligue 1</span>
-                        <span>2</span>
+                        <span>{detailsText}</span>
+                        <span>{detailsData}</span>
                     </li>
                     <li>
                         <span>Ligue 2</span>

@@ -34,4 +34,20 @@ const IconBooster = () => {
     </>
 }
 
-export {IconTitleCountries, IconTrashBin, IconClose, IconBooster}
+const IconMinus = () => {
+    return <>
+        <svg width="9" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0V2H0V0H9Z" fill="white"/>
+        </svg>
+    </>
+}
+
+const IconPlus = () => {
+    return <>
+        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.28418 3.38672V5.18799H0V3.38672H8.28418ZM5.11328 0V8.79883H3.1792V0H5.11328Z" fill="white"/>
+        </svg>
+    </>
+}
+
+export {IconTitleCountries, IconTrashBin, IconClose, IconBooster, IconMinus, IconPlus}

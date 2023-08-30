@@ -18,6 +18,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 2.796px;
+  cursor: pointer;
   &-green {
     color: $text-main;
     background: linear-gradient(180deg, #54B052 0%, #287226 100%);

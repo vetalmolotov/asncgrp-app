@@ -4,6 +4,7 @@ import UserProfile from "./UserProfile/UserProfile";
 import ButtonLogout from "../buttons/btnLogout";
 import ChangeLang from "../ChangeLanguage/ChangeLang";
 import '../../assets/styles/header/header-user-bar.scss'
+import ButtonDefault from "../buttons/btnDefault";
 
 const HeaderUserBar = () => {
 
@@ -11,7 +12,10 @@ const HeaderUserBar = () => {
         <section className="user-bar">
             <UserActions />
             <UserProfile />
-            <a href="/" className="btn btn-green user-bar-withdraw">WITHDRAWAL</a>
+            <ButtonDefault
+                customClass={'btn-green user-bar-withdraw'}
+                text={'WITHDRAWAL'}
+            />
             <ChangeLang/>
             <div className="user-bar-divider"></div>
             <ButtonLogout />

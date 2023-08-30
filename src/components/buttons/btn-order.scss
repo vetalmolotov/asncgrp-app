@@ -1,0 +1,11 @@
+@import "src/assets/styles/mixins";
+
+.btn-order {
+  @include flex-vh;
+  color: #F9F9F9;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: #0E0E0E;
+  cursor: pointer;
+}

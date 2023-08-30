@@ -1,0 +1,28 @@
+@import "src/assets/styles/mixins";
+
+.dropdown-system {
+  @include flex-v;
+  justify-content: center;
+  width: 100%;
+  height: 32px;
+  margin: 3px 0 7px;
+  cursor: pointer;
+  p {
+    color: #ABB2BA;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    margin: 0 8px 0 0;
+  }
+  svg {
+    transform: rotate(0deg);
+  }
+  &.open {
+    p {
+      font-weight: 500;
+    }
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}

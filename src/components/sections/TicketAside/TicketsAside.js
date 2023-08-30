@@ -2,6 +2,7 @@ import React from "react";
 import './tickets-aside.scss'
 import HeaderContent from "../../HeaderContent/HeaderContent";
 import {IconTrashBin} from "../../../assets/imgComponents/iconsCommon";
+import DropdownSystem from "../../DropdownSystem/DropdownSystem";
 
 const TicketAside = () => {
 
@@ -13,7 +14,9 @@ const TicketAside = () => {
                 <div className="header-content-divider"></div>
                 <IconTrashBin />
             </HeaderContent>
-            <section>content</section>
+            <section className="tickets-sidebar-content">
+                <DropdownSystem text={'System'} />
+            </section>
             <footer>footer</footer>
         </section>
     </>

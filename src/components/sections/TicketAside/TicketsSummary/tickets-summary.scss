@@ -1,0 +1,28 @@
+@import "src/assets/styles/mixins";
+.tickets-footer-summary {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin-bottom: 20px;
+  li {
+    @include flex-v;
+    justify-content: space-between;
+    height: 16px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 12px;
+    font-weight: 400;
+    &:last-child {
+      p {
+        color: #FFF;
+        font-weight: 700;
+      }
+      span {
+        color: #22B14C;
+      }
+    }
+    span {
+      color: #FFF;
+      font-weight: 600;
+    }
+  }
+}

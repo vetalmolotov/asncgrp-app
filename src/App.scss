@@ -10,6 +10,16 @@ h1, h2, h3, h4, h5, p, ul, li {
 ul {
   list-style: none;
 }
+button {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
+}
 #root {
   display: flex;
   justify-content: center;

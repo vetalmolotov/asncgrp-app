@@ -26,4 +26,12 @@ const IconClose = () => {
     </>
 }
 
-export {IconTitleCountries, IconTrashBin, IconClose}
+const IconBooster = () => {
+    return <>
+        <svg viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 5.0447H9L4 13V7.9553H0L5 0V5.0447Z" />
+        </svg>
+    </>
+}
+
+export {IconTitleCountries, IconTrashBin, IconClose, IconBooster}

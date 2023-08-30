@@ -1,7 +1,6 @@
 import React, {useState} from "react";
+import {IconDropdown} from "../../assets/imgComponents/iconArrows";
 import './country-item.scss'
-import {FlagAlgeria} from "../../assets/imgComponents/saidebarFlags";
-import {IconDropdownMenu} from "../../assets/imgComponents/iconArrows";
 
 const CountryItem = ({flag, title, detailsText, detailsData}) => {
 
@@ -18,7 +17,7 @@ const CountryItem = ({flag, title, detailsText, detailsData}) => {
             >
                 {flag}
                 <p>{title}</p>
-                <IconDropdownMenu className={'arrow'} />
+                <IconDropdown className={'arrow'} />
             </h4>
             {setOpen &&
                 <ul className="country-details-list">

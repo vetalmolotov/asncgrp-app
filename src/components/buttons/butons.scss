@@ -1,0 +1,7 @@
+@import "src/assets/styles/mixins";
+
+.btn-close {
+  @include flex-vh;
+  border: 1px solid rgba(255, 252, 252, 0.06);
+  cursor: pointer;
+}

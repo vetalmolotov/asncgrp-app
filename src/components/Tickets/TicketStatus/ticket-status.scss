@@ -1,0 +1,37 @@
+@import "../../../assets/styles/mixins";
+
+.ticket-status {
+  @include flex-v;
+  justify-content: space-between;
+  column-gap: 2px;
+  min-width: 46px;
+  height: 19px;
+  padding: 0 4px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.244px;
+  border-radius: 2px;
+  &.grow {
+    background: #22B14C;
+  }
+  &.fall {
+    background: #D21034;
+    svg {
+      transform: rotate(-180deg);
+    }
+  }
+  &.unavailable {
+    padding: 0 6px;
+    color: #D21034;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.244px;
+    text-transform: uppercase;
+    border: 1px solid #D21034;
+    background: rgba(210, 16, 52, 0.04);
+    svg {
+      //display: none;
+    }
+  }
+}

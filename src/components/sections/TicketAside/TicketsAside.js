@@ -3,6 +3,7 @@ import './tickets-aside.scss'
 import HeaderContent from "../../HeaderContent/HeaderContent";
 import {IconTrashBin} from "../../../assets/imgComponents/iconsCommon";
 import DropdownSystem from "../../DropdownSystem/DropdownSystem";
+import TicketsList from "../../Tickets/TicketsList/TicketsList";
 
 const TicketAside = () => {
 
@@ -16,6 +17,7 @@ const TicketAside = () => {
             </HeaderContent>
             <section className="tickets-sidebar-content">
                 <DropdownSystem text={'System'} />
+                <TicketsList />
             </section>
             <footer>footer</footer>
         </section>

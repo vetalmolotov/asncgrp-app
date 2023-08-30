@@ -1,0 +1,12 @@
+.tickets-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding: 0 5px;
+  li {
+    background: #151515;
+  }
+  li:nth-child(even) {
+    background: #1B1B1B;
+  }
+}

@@ -30,5 +30,12 @@ const IconArrowStatus = () => {
         </svg>
     </>
 }
+const IconArrowSorting = () => {
+    return <>
+        <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 0.5C8 0.632812 7.94531 0.757812 7.85156 0.851562L4.35156 4.35156C4.25781 4.44531 4.13281 4.5 4 4.5C3.86719 4.5 3.74219 4.44531 3.64844 4.35156L0.148438 0.851562C0.0546875 0.757812 0 0.632812 0 0.5C0 0.226562 0.226562 0 0.5 0H7.5C7.77344 0 8 0.226562 8 0.5Z" fill="black"/>
+        </svg>
+    </>
+}
 
-export {IconDropdown, IconDropdownFilled, IconArrowStatus}
+export {IconDropdown, IconDropdownFilled, IconArrowStatus, IconArrowSorting}

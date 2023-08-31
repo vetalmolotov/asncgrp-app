@@ -53,6 +53,24 @@
       @include flex-vh;
       height: 100%;
     }
+    &.by-date,
+    &.by-league {
+      h5 {
+        cursor: pointer;
+      }
+      svg {
+        margin-left: 5px;
+      }
+    }
+    &.by-league {
+      h5 {
+        width: 110px;
+        margin: 0 auto 0 25px;
+        svg {
+          margin-left: 20px;
+        }
+      }
+    }
   }
 
   &-n {// footnote of table

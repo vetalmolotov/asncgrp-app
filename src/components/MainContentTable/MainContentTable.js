@@ -96,7 +96,7 @@ const MainContentTable = ({customClass}) => {
                 over: '1.90',
                 overStatus: 'filled',
                 inherit: '2.5',
-                inheritStatus: '',
+                inheritStatus: 'transparent',
                 under: '3.10',
                 underStatus: 'grow',
             },

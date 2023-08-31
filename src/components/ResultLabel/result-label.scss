@@ -1,0 +1,72 @@
+@import "src/assets/styles/mixins";
+
+.result-label {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  overflow: hidden;
+  span {
+    @include flex-vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 3px 0;
+    color: #161616;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.227px;
+    background: linear-gradient(180deg, #F1F1F1 0%, #9E9E9E 100%);
+    z-index: 5;
+  }
+  &.grow {
+    span {
+      height: calc(100% - 3px);
+      margin: 3px 0 0 0;
+      padding: 0 0 3px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(180deg, #54B052 0%, #287226 100%);
+      z-index: 4;
+    }
+  }
+  &.fall {
+    span {
+      height: calc(100% - 3px);
+      margin: 0 0 3px 0;
+      padding: 3px 0 0;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(0deg, #C50F2D 0%, #571114 100%);
+      z-index: 4;
+    }
+  }
+  &.filled {
+    span {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.2270604521036148px;
+      color: rgba(255, 255, 255, 1);
+      background: linear-gradient(180deg, #54B052 0%, #287226 100%);
+    }
+  }
+  &.transparent {
+    span {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.2270604521036148px;
+      color: rgba(255, 255, 255, 1);
+      background: none;
+    }
+  }
+}

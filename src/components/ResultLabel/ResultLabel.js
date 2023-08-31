@@ -4,23 +4,19 @@ import {IconLock} from "../../assets/imgComponents/iconsCommon";
 
 const ResultLabel = ({
     data,
-    grow,
-    fall,
-    filled,
-    transparent,
-    locked
+    status,
                      }) => {
 
     return <>
         <div className={`
             result-label
-            ${grow ? 'grow' : ''}
-            ${fall ? 'fall' : ''}
-            ${filled ? 'filled' : ''}
-            ${transparent ? 'transparent' : ''}
+            ${status === 'grow' ? 'grow' : ''}
+            ${status === 'fall' ? 'fall' : ''}
+            ${status === 'filled' ? 'filled' : ''}
+            ${status === 'transparent' ? 'transparent' : ''}
         `}>
             <span>
-                {locked ? <IconLock /> : data}
+                {status === 'locked' ? <IconLock /> : data}
             </span>
         </div>
     </>

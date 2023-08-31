@@ -1,7 +1,7 @@
 import React from "react";
 import './ticket.scss'
 import ButtonClose from "../../buttons/btnClose";
-import TicketStatus from "../TicketStatus/TicketStatus";
+import LabelStatus from "../../LabelStatus/LabelStatus";
 
 const Ticket = ({
     ticketName,
@@ -18,7 +18,7 @@ const Ticket = ({
             </div>
             <div className="ticket-data">
                 <p>Total Goals: <span>{ticketTotal}</span></p>
-                <TicketStatus
+                <LabelStatus
                     status={ticketStatus}
                     statusData={ticketStatusData}
                 />

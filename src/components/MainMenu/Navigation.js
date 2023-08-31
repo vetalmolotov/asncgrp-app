@@ -1,6 +1,5 @@
 import React from "react";
-import menuStyles from './nav.module.scss'
-import '../../assets/styles/header/menu.scss'
+import './nav.scss'
 
 
 const MainMenu = () => {
@@ -38,11 +37,11 @@ const MainMenu = () => {
 
     ];
     return <>
-        <nav className={menuStyles.nav}>
+        <nav className="App-nav">
             {menuItem.map((option) => (
                 <a
                     key={option.id}
-                    className={`nav-link ${option.isActive ? 'nav-link__active' : ''}`}
+                    className={`App-nav-link ${option.isActive ? 'App-nav-link__active' : ''}`}
                     href={option.url}
                 >
                         {option.menuText}

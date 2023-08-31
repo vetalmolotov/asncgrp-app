@@ -3,7 +3,7 @@ import UserActions from "./UserActions/UserActions";
 import UserProfile from "./UserProfile/UserProfile";
 import ButtonLogout from "../buttons/btnLogout";
 import ChangeLang from "../ChangeLanguage/ChangeLang";
-import '../../assets/styles/header/header-user-bar.scss'
+import './header-user-bar.scss'
 import ButtonDefault from "../buttons/btnDefault";
 
 const HeaderUserBar = () => {

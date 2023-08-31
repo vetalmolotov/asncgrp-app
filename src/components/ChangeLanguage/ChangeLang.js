@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {LangEng, LangGerman, LangTurkish, LangUkraine} from '../../assets/imgComponents/langFlags'
 import lang from './change-lang.module.scss'
-import '../../assets/styles/header/change-lang.scss'
+import './change-lang.scss'
 
 const ChangeLang = () => {
 

@@ -9,16 +9,8 @@ const ContentMain = () => {
 
     return <>
         <main className="app-content-main content-main">
-            {/*<HeaderContent>*/}
-            {/*    <p>main header</p>*/}
-            {/*    <div className="header-content-divider"></div>*/}
-            {/*    <p>main header 2</p>*/}
-            {/*</HeaderContent>*/}
-            {/*<p>main</p>*/}
-            {/*<br/>*/}
 
-            <MainContentTable />
-
+            <MainContentTable customClass={'content-main-grid'} />
 
         </main>
     </>

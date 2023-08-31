@@ -4,7 +4,7 @@ import TableFootnote from "./TableFootnote";
 import TableContent from "./TableContent";
 import './content-table.scss'
 
-const MainContentTable = () => {
+const MainContentTable = ({customClass}) => {
 
     const tableContent = [
         {
@@ -151,7 +151,7 @@ const MainContentTable = () => {
     ]
 
     return <>
-        <div className="content-main-grid tbl-content">
+        <div className={`${customClass} tbl-content`}>
 
             {/* table heading */}
             <TableHeader />

@@ -1,6 +1,10 @@
 @import "src/assets/styles/mixins";
 @import "src/assets/styles/variables";
-.nav {
+.App-nav {
+  display: flex;
+  height: 70px;
+  column-gap: 30px;
+  margin-right: auto;
   &-link {
     @include flex-vh;
     height: 100%;
